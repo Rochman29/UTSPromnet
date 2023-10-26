@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+}
+.full-body {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.bg-img {
+  background-image: url(img/bg.png);
+  background-size: cover;
+}
+.title {
+  color: grey;
+  size: 10px;
+}
+.lorem-work {
+  margin-top: 100px;
+}
+.lorem-contact {
+  margin-top: 70px;
+}
+.contact-us {
+  margin-top: 50px;
+}
+.btn-outline-dark {
+  border-radius: 20px;
+}
+.p-lorem {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+.btn-info {
+  background-color: white;
+  border-radius: 50px;
+}
