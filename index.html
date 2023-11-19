@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       rel="stylesheet"
@@ -58,7 +59,11 @@
         <p class="col-md-8 fs-4 mb-0">Hi! I am</p>
         <h1 class="display-5 fw-bold">Rochman Bambang Eko Saputro</h1>
         <p class="col-md-8 fs-4">Game Developer</p>
-        <button class="btn btn-outline-dark btn-sm" type="button">
+        <button
+          class="btn btn-outline-dark btn-sm"
+          type="button"
+          onclick="return resume()"
+        >
           resume
         </button>
       </div>
@@ -80,11 +85,16 @@
               <h5>SMAN 3 CIKARANG UTARA</h5>
               <p>(2019 - 2022)</p>
             </div>
-            <button type="button" class="col-1 btn btn-outline-dark btn-info">
+            <button
+              id="button1"
+              type="button"
+              onclick="return lessInfo1();"
+              class="col-1 btn btn-outline-dark btn-info"
+            >
               less info
             </button>
           </div>
-          <p>
+          <p id="info1">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
             officia magnam optio nesciunt aliquam reiciendis, laudantium amet
             earum eos ex nihil quaerat odit iusto inventore!
@@ -96,11 +106,15 @@
               <h5>SMAN 3 CIKARANG UTARA</h5>
               <p>(2019 - 2022)</p>
             </div>
-            <button type="button" class="col-1 btn btn-outline-dark btn-info">
+            <button
+              type="button"
+              class="col-1 btn btn-outline-dark btn-info"
+              onclick="return lessInfo2();"
+            >
               less info
             </button>
           </div>
-          <p>
+          <p id="info2">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
             officia magnam optio nesciunt aliquam reiciendis, laudantium amet
             earum eos ex nihil quaerat odit iusto inventore!
@@ -112,11 +126,15 @@
               <h5>SMAN 3 CIKARANG UTARA</h5>
               <p>(2019 - 2022)</p>
             </div>
-            <button type="button" class="col-1 btn btn-outline-dark btn-info">
+            <button
+              type="button"
+              class="col-1 btn btn-outline-dark btn-info"
+              onclick="return lessInfo3();"
+            >
               less info
             </button>
           </div>
-          <p>
+          <p id="info3">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
             officia magnam optio nesciunt aliquam reiciendis, laudantium amet
             earum eos ex nihil quaerat odit iusto inventore!
@@ -211,7 +229,7 @@
               <div class="mb-3">
                 <label for="subject" class="form-label"><b>Subject</b></label>
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
                   id="subject"
                   placeholder="Your subject"
